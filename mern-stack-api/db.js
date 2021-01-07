@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const URI = 'mongodb+srv://joshAdmin:Herender101@chat-app.fpkr9.mongodb.net/Chat-App?retryWrites=true&w=majority'
+const URI = process.env.URI
 
 mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true}, (err) => {
     if (!err) {
